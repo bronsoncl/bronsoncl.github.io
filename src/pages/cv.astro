@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I'm a mathematician...
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="M.S. in Computer Science"
+      subtitle="2024 to Present at Georgia Tech, Atlanta, GA"
+    />
+    <TimeLineElement
+      title="Ph.D. in Mathematics"
+      subtitle="2011 to 2017 at University of Oregon, Eugene, OR"
+    />
+    <TimeLineElement
+      title="M.A. in Mathematics"
+      subtitle="2009 to 2011 at California State University San Bernardino, San Bernardino, CA"
+    />
+    <TimeLineElement
+      title="B.S. in Mathematics"
+      subtitle="2005 to 2009 at California State University San Bernardino, San Bernardino, CA"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Assistant Professor"
+      subtitle="From 2020 to Present at California State University San Bernardino, San Bernardino, CA"
+    >
+    I teach a wide variety of undergraduate and graduate courses in the mathematics department. I am currently the
+    departmental representative for tenure-line faculty in the CFA. I'm active in the departmental assessment committee.
+    In the past, I have served at the university level via EPRC. I supervise M.A. theses and undergraduate research
+    projects. I also conduct research in algebraic geometry.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Research Assistant Professor"
+      subtitle="From 2017 to 2020 at the University of Utah, Salt Lake City, UT"
+    >
+    Taught calculus, analysis, cryptography, and abstract algebra. Supervised undergraduate independent studies in Lie algebras, topological data analysis, and wavelets. Conducted research. Organized the Algebraic Geometry seminar.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Graduate Teaching Fellow"
+      subtitle="From 2011 to 2017 at the University of Oregon, Eugene, OR"
+    >
+    Taught undergraduate courses in mathematics including university math, pre-calculus, linear algebra, differential
+    equations, and analysis. 
+    </TimeLineElement>
+    <TimeLineElement
+      title="Teaching Associate"
+      subtitle="From 2010 to 2011 at the California State University San Bernardino, San Bernardino, CA"
+    >
+    Taught remedial mathematics courses.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://catalog.csusb.edu/colleges-schools-departments/natural-sciences/computer-science-engineering/computer-systems-programming-certificate/" target="_blank"> Certificate in Computer Systems and Programming (2023)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>C languages</li>
+    <li>React/Node</li>
+    <li>Unity/C\#</li>
+    <li>Python/SageMath</li>
+    <li>Technical Writing/LaTeX</li>
+    <li>Scientific Computing</li>
+    <li>Relational Databases/MySQL</li>
+  </ul>
+</BaseLayout>
